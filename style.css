@@ -27,7 +27,6 @@ font-size: 0.936em;
 
 header{
   height:28%;
-  background-color:red;
   padding:3%;
 }
 
@@ -44,6 +43,7 @@ h1{
 
  .subtitle{
    font-weight:600;
+   margin-bottom: 2%;
  }
 
  .description-title{
@@ -63,11 +63,20 @@ h1{
     display:grid;
     width:100%;
     height:100%;
-    grid-template-columns:  0.3fr 1fr 1fr 1fr 0.3fr;
+    grid-template-columns:  0.4fr 1fr 1fr 1fr 0.4fr;
     grid-template-rows: repeat(8, 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr)  ;
-    column-gap:15px;
+    column-gap:25px;
 
   }
+
+.card1,.card2, .card3,.card4{
+  background-color:white;
+  border-radius:5px;
+  padding:8%;
+  position:relative;
+  box-shadow: #D7D7FF 0px 13px 27px -5px, #D7D7FF 0px 8px 16px -8px;
+
+}
 
   .card1{
     grid-row-start:11;
@@ -75,11 +84,7 @@ h1{
     grid-column-start:2;
     grid-column-end:3;
 
-    background-color:white;
-    border: solid black 1px;
-    border-radius:5px;
     border-top: var(--Cyan) solid 5px;
-    padding:8%;
 
   }
 
@@ -89,11 +94,7 @@ h1{
     grid-column-start:3;
     grid-column-end:4;
 
-    background-color:white;
-    border: solid black 1px;
-    border-radius:5px;
     border-top: var(--Red) solid 5px;
-    padding:8%;
   }
 
 
@@ -103,11 +104,7 @@ h1{
     grid-column-start:3;
     grid-column-end:4;
 
-    background-color:white;
-    border: solid black 1px;
-    border-radius:5px;
     border-top: var(--Orange) solid 5px;
-    padding:8%;
   }
 
   .card4{
@@ -116,26 +113,37 @@ h1{
     grid-column-start:4;
     grid-column-end:5;
 
-    background-color:white;
-    border: solid black 1px;
-    border-radius:5px;
     border-top: var(--Blue) solid 5px;
-    padding:8%;
 }
 
  h3{
-margin-bottom:2%;
+      margin-bottom:3%;
+      color: var(--Very-Dark-Blue);
+      letter-spacing:0.8px;
  }
 
- .description-card{
+ p.description-card{
 
    color: var(--Grayish-Blue);
    line-height: 1.5em;
-   letter-spacing:0.8px;
+   letter-spacing:1.2px;
  }
 
- .img1{
-   display:inline;
-   position:relative;
-bottom:0;
-right:0; }
+ .img1, .img2, .img3,  .img4{
+   position:absolute;
+   bottom:1.7em;
+   right:1.7em;
+ }
+
+
+@media only screen and (max-width:500px){
+ .wrapper{
+   width:90%;
+   display:float;
+
+ }
+
+ .card1, .card2,.car3,.card4{
+   width:100%;
+ }
+}
