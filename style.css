@@ -63,15 +63,15 @@ h1{
     display:grid;
     width:100%;
     height:100%;
-    grid-template-columns:  0.4fr 1fr 1fr 1fr 0.4fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:  0.3fr 1fr 1fr 1fr 0.3fr;
+    grid-template-rows: repeat(8, 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr)  ;
     column-gap:15px;
 
   }
 
   .card1{
-    grid-row-start:3;
-    grid-row-end:6;
+    grid-row-start:11;
+    grid-row-end:27;
     grid-column-start:2;
     grid-column-end:3;
 
@@ -84,30 +84,44 @@ h1{
   }
 
   .card2{
-    grid-row-start:1;
-    grid-row-end:4;
+    grid-row-start:2;
+    grid-row-end:18;
     grid-column-start:3;
     grid-column-end:4;
-    background-color:yellow;
+
+    background-color:white;
+    border: solid black 1px;
+    border-radius:5px;
+    border-top: var(--Red) solid 5px;
+    padding:8%;
   }
 
 
   .card3{
-    grid-row-start:6;
-    grid-row-end:9;
+    grid-row-start:20;
+    grid-row-end:36;
     grid-column-start:3;
     grid-column-end:4;
-    background-color:yellow;
 
+    background-color:white;
+    border: solid black 1px;
+    border-radius:5px;
+    border-top: var(--Orange) solid 5px;
+    padding:8%;
   }
 
   .card4{
-    grid-row-start:3;
-    grid-row-end:6;
+    grid-row-start:11;
+    grid-row-end:27;
     grid-column-start:4;
     grid-column-end:5;
 
-    background-color:yellow;}
+    background-color:white;
+    border: solid black 1px;
+    border-radius:5px;
+    border-top: var(--Blue) solid 5px;
+    padding:8%;
+}
 
  h3{
 margin-bottom:2%;
